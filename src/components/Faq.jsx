@@ -11,12 +11,19 @@ const Accordion = () => {
                 FAQ
               </span>
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                Any Questions? Look Here
+              Are You Ready To Seek Your Fortune? 
               </h2>
-              <p className="text-base text-body-color dark:text-custom-ter">
+              {/* <p className="text-base text-body-color dark:text-custom-ter">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
-              </p>
+              </p> */}
+                <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="#"
+                  className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
+                >   ENROLL NOW      £29.99
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -24,31 +31,46 @@ const Accordion = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="How do I know which campus to start from?"
+              text="This will be in accordance with how much time and money you have to dedicate yourself. When you enter, take our onboarding quiz that will put you in the right place."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="How long does it take to make money?"
+              text="This depends on you. Some students can make money on their 1st day! Some longer. The key is how dedicated and committed you are.
+"
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="Can I cancel my membership anytime?"
+              text="Yes. You Can Cancel At Anytime."
+            />
+                        <AccordionItem
+              header="Is WCU available in my country?"
+              text="WCU is available in all countries."
+            />
+                        <AccordionItem
+              header="What does it take to succeed inside WCU?"
+              text="If you are hardworking and conscientious, you will succeed. However, your success will depend on how hard you work. Some people can make money in a few days, others longer. It all depends on you! But we will assist you to the best of our ability!
+"
             />
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+          <AccordionItem
+              header="Can I access WCU from my phone?"
+              text="Yes."
             />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                        <AccordionItem
+              header="Can I join despite not knowing anything or having any skills?"
+              text="Absolutely! We will support you in becoming competent in the field of money-making. This is a skill anyone can acquire!."
             />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+                        <AccordionItem
+              header="Do I have to attend WCU at certain times?"
+              text="No. You have access 24/7 at any time of your preference. You are not mandated to attend at a particular time."
             />
+                                    <AccordionItem
+              header="I am under 18, can I still join? "
+              text="We encourage anyone under 18, with the consent of their parent(s) or guardian (s) to join."
+            />
+
           </div>
         </div>
       </div>
@@ -96,14 +118,14 @@ const AccordionItem = ({ header, text }) => {
     setActive(!active);
   };
   return (
-    <div className="mb-8 w-full rounded-lg text-custom-ter bg-custom-pri p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+    <div className="mb-8 w-full rounded-lg bg-custom-pri p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
       <button
-        className={`faq-btn flex text-custom-ter w-full text-left`}
+        className={`faq-btn flex w-full text-left`}
         onClick={() => handleToggle()}
       >
-        <div className="mr-5 flex h-10 text-custom-ter w-full max-w-[40px] items-center justify-center rounded-lg  text-custom-ter ">
+        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-custom-sec text-custom-ter ">
           <svg
-            className={`fill-primary text-custom-ter stroke-primary duration-200 ease-in-out ${
+            className={`fill-primary stroke-primary duration-200 ease-in-out ${
               active ? "rotate-180" : ""
             }`}
             width="17"
