@@ -1,4 +1,3 @@
-
 import {
   StrikethroughIcon,
   ArrowUpOnSquareStackIcon,
@@ -11,7 +10,7 @@ import {
 import React from "react";
 import Navbar from "../components/Navbar";
 import Campuses from "../pages/Campuses";
-import Faq from '../components/Faq'
+import Faq from "../components/Faq";
 function Home() {
   return (
     <>
@@ -19,12 +18,12 @@ function Home() {
 
       <div className="bg-custom-pri -pt-4 -ml-2">
         <div className="relative isolate px-6  lg:px-8  bg-custom-pri">
-        <div className="  sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Are You Ready To Seek Your Fortune? {' '}
+          <div className="  sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 text-center py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              Are You Ready To Seek Your Fortune?{" "}
               <a href="#" className="font-semibold text-custom-sec">
                 <span aria-hidden="true" className="absolute inset-0" />
-                ENROLL NOW    £29.99
+                ENROLL NOW £29.99
                 <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
@@ -38,28 +37,31 @@ function Home() {
               <h1 className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl">
                 WEALTH CREATION UNIVERSITY
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-custom-ter">
                 The current period of economic stagnation and hyperinflation has
                 led to an increase in relative poverty in the world. As jobs per
                 capita decline over time, it is imperative to turn towards
                 entrepreneurship and independence.
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-              Wealth Creations University provides a platform for this.
-Wealth Creations University is an online educational platform that teaches people how to make money through over 22 modernistic wealth-building methods. 
-
+                Wealth Creations University provides a platform for this. Wealth
+                Creations University is an online educational platform that
+                teaches people how to make money through over 22 modernistic
+                wealth-building methods.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
                   className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
                 >
-                  Join Now 
+                  Join Now
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-custom-sec">
-             Learn more <span aria-hidden="true">→</span>
-           </a>
-           
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-custom-sec"
+                >
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
           </div>
@@ -230,33 +232,44 @@ Wealth Creations University is an online educational platform that teaches peopl
           </div>
         </div>
       </div>
-      <Campuses />
 
-      <div className="mx-auto max-w-2xl py-16 sm:py-48 lg:py-56">
-            <div className="text-center">
-              <h6 className="text-1sm font-bold tracking-tight text-custom-sec sm:text-6xl">
-                Academia Knowledge and Practicality
-              </h6>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                  The knowledge inside WCU is practical and esigned to give you the skills in money making. We have demonstrations that teach you what to do if you are a visual learner. We believe that everyone deserves a fair chance, hence have amplified our content for all end users. 
-              </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                  It is imperative to have practical knowledge and guidance when making money. WCU provides this. If you get stuck, raise your question inside WCU.  
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-custom-sec px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                >
-                  Join Now
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-custom-ter">
-             Learn more <span aria-hidden="true">→</span>
-           </a>
-              </div>
-            </div>
+      <div id="campuses" className="mx-auto max-w-2xl py-8 sm:py-48 lg:py-36">
+        <div className="text-center">
+          <h6 className="text-2xl font-bold tracking-tight text-custom-sec sm:text-6xl">
+            CAMPUSES
+          </h6>
+          <h6 className="text-sm font-bold text-center tracking-tight text-custom-sec">
+            Academia Knowledge and Practicality{" "}
+          </h6>
+          <p className="mt-6 text-lg leading-8 text-custom-ter">
+            The knowledge inside WCU is practical and esigned to give you the
+            skills in money making. We have demonstrations that teach you what
+            to do if you are a visual learner. We believe that everyone deserves
+            a fair chance, hence have amplified our content for all end users.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-custom-ter">
+            It is imperative to have practical knowledge and guidance when
+            making money. WCU provides this. If you get stuck, raise your
+            question inside WCU.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-custom-sec px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Join Now
+            </a>
+            <a
+              href="#"
+              className="text-sm font-semibold leading-6 text-custom-ter"
+            >
+              Learn more <span aria-hidden="true">→</span>
+            </a>
           </div>
-              <Faq />
+        </div>
+      </div>
+      <Campuses />
+      <Faq />
     </>
   );
 }

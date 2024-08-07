@@ -4,7 +4,7 @@ import {
   CalendarDaysIcon,
   ShieldExclamationIcon,
   BuildingStorefrontIcon,
-  PresentationChartLineIcon
+  PresentationChartLineIcon,
 } from "@heroicons/react/20/solid";
 
 const products = [
@@ -48,7 +48,7 @@ const products = [
     name: "E-commerce Business (Non-Branded) ",
     href: "#",
     price: "$35",
-    icon: <PresentationChartLineIcon />
+    icon: <PresentationChartLineIcon />,
   },
   {
     id: 7,
@@ -183,43 +183,38 @@ const products = [
 function Campuses() {
   return (
     <>
-      <div
-        id="campuses"
-        className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
-      >
-        <h2 className="text-2xl font-bold text-center tracking-tight text-custom-sec">
-          Campuses
-        </h2>
+      <p className="mt-6 text-lg leading-8 text-custom-ter text-center">
+        Our campuses are all high cash flow based income models
+      </p>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
-            <div key={product.id} className="group relative">
-              {/* <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+      <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        {products.map((product) => (
+          <div key={product.id} className="group relative">
+            {/* <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                   alt={product.imageAlt}
                   src={product.imageSrc}
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div> */}
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-base text-custom-ter hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter ">
-                    <a href={product.href}>
-                      <span  className=" w-2 h-2 text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180"
-                      >
-                        {" "}
-                        {product.icon}
-                      </span>
-                      <span aria-hidden="true" className=" inset-0" />
-                      {product.name}
-                    </a>
-                  </h3>
-                </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-base text-custom-ter hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter ">
+                  <a href={product.href}>
+                    <span className=" w-2 h-2 text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180">
+                      {" "}
+                      {product.icon}
+                    </span>
+                    <span aria-hidden="true" className=" inset-0" />
+                    {product.name}
+                  </a>
+                </h3>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+      {/* </div> */}
     </>
   );
 }
