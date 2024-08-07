@@ -7,16 +7,22 @@ import logo from '../assets/logo.jpg'
 
 
 const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Product', href: '/products' },
-  { name: 'Campuses', href: '/campuses' },
+  { name: 'About', href: '#about' },
+  { name: 'Product', href: '/' },
+  { name: 'Campuses', href: '#campuses' },
   { name: 'Our Axioms', href: '/axioms' },
   { name: 'History', href: '/history' },
   { name: 'Q & A', href: '/q&a' },
   { name: 'Founder', href: '/founder' },
   { name: 'Contact', href: '/contact' },
 ]
-
+ const handleScroll = (e) => {
+  e.preventDefault();
+  const sectionId = e.target.getAttribute("href");
+  const section = document.querySelector(sectionId);
+  section.scrollIntoView({behaviour: 'smooth'})
+  setActiveSection(sectionId)
+ }
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -46,7 +52,7 @@ export default function Example() {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-custom-sec hover:text-custom-ter">
+          <a key={item.name} href={item.href} onClick={handleScroll} className="text-sm font-semibold leading-6 text-custom-sec hover:text-custom-ter">
             {item.name}
           </a>
         ))}
@@ -94,7 +100,7 @@ export default function Example() {
             <div className="py-6">
               <a
                 href="/form"
-                className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-custom-sec hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-custom-sec hover:bg-gray-50 transition ease-in-out duration-300"
               >
                 Log in
               </a>
