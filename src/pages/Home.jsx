@@ -1,3 +1,4 @@
+
 import {
   StrikethroughIcon,
   ArrowUpOnSquareStackIcon,
@@ -18,12 +19,13 @@ function Home() {
 
       <div className="bg-custom-pri -pt-4 -ml-2">
         <div className="relative isolate px-6  lg:px-8  bg-custom-pri">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+        <div className="  sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Are You Ready To Seek Your Fortune? {' '}
+              <a href="#" className="font-semibold text-custom-sec">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                ENROLL NOW    £29.99
+                <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
