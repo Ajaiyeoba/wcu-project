@@ -203,7 +203,7 @@ function Campuses() {
                   <a href={product.href}>
                     <span className=" w-2 h-2 text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180">
                       {" "}
-                      {product.icon}
+                      {/* {product.icon} */}
                     </span>
                     <span aria-hidden="true" className=" inset-0" />
                     {product.name}
