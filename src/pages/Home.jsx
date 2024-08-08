@@ -5,12 +5,13 @@ import {
   SquaresPlusIcon,
   SparklesIcon,
   CloudArrowUpIcon,
-  ClockIcon,
 } from "@heroicons/react/20/solid";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Campuses from "../pages/Campuses";
 import Faq from "../components/Faq";
+import Pricing from "../components/Pricing";
+import Footer from "../components/Footer";
 function Home() {
   return (
     <>
@@ -43,7 +44,7 @@ function Home() {
                 capita decline over time, it is imperative to turn towards
                 entrepreneurship and independence.
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-custom-ter">
                 Wealth Creations University provides a platform for this. Wealth
                 Creations University is an online educational platform that
                 teaches people how to make money through over 22 modernistic
@@ -269,7 +270,12 @@ function Home() {
         </div>
       </div>
       <Campuses />
+      <Pricing />
       <Faq />
+              
+
+
+      <Footer />
     </>
   );
 }
