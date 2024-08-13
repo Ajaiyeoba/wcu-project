@@ -30,12 +30,13 @@ function Home() {
             </div>
           </div>
           <div
+          data-aos="fade-up"
             aria-hidden="true"
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           ></div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl">
+              <h1 data-aos="fade-up" className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl">
                 WEALTH CREATION UNIVERSITY
               </h1>
               <p className="mt-6 text-lg leading-8 text-custom-ter">
