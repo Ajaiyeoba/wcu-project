@@ -112,7 +112,7 @@ function Home() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className=" text-center text-2xl font-semibold leading-7 text-custom-sec">
+                <p className=" text- text-2xl font-semibold leading-7 text-custom-sec">
                   About Us
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-custom-ter sm:text-4xl">
@@ -121,8 +121,8 @@ function Home() {
                 <p className="mt-6 text-xl leading-8 text-custom-sec">
                   WCU is a global education platform where people around the
                   world learn how to make money. Irrespective of background, we
-                  believe evveryone has the potential to achieve financial
-                  freedom. WCU will help you towards achieving that gaol.
+                  believe everyone has the potential to achieve financial
+                  freedom. WCU will help you towards achieving that goal.
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ function Home() {
                   <li className="flex gap-x-3">
                     <StrikethroughIcon
                       aria-hidden="true"
-                      className="mt-1 h-5 w-5 flex-none text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180 "
+                      className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180 "
                     />
                     <span>
                       At WCU, you will be supported on your journey of money
@@ -157,7 +157,7 @@ function Home() {
                   <li className="flex gap-x-3">
                     <ArrowUpOnSquareStackIcon
                       aria-hidden="true"
-                      className="mt-1 h-5 w-5 flex-none text-custom-sec hover:text-custom-ter hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                      className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
                     />
                     <span>
                       At WCU, we believe that knowledge must be practical. This
@@ -261,7 +261,7 @@ function Home() {
               Join Now
             </a>
             <a
-              href="#"
+              href="/login"
               className="text-sm font-semibold leading-6 text-custom-ter"
             >
               Learn more <span aria-hidden="true">→</span>
@@ -270,10 +270,95 @@ function Home() {
         </div>
       </div>
       <Campuses />
+      <div
+        id="axioms"
+        className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+        
+        </div>
+        <div className="mx-auto grid justify-center max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          <div className="lg:col-span-2 lg:col-start-1 justify-center text-center lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div className="lg:pr-4">
+              <div className="lg:max-w-lg">
+
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-custom-ter sm:text-4xl">
+                  Our Axioms
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div className="lg:pr-4 justify-center">
+              <div className="max-w-xl text-base leading-7 text-custom-ter lg:max-w-lg">
+                <ul role="list" className="mt-8 space-y-8 text-custom-ter">
+                  <li className="flex gap-x-3">
+                    <LifebuoyIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none   text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Everyone can be rich, you just need to put the effort in.
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <ArrowUpOnSquareStackIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Everyone should become independent and self-sufficient
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <SquaresPlusIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Everyone has the willpower inside them to reach heights
+                      beyond expectations
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <CloudArrowUpIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Everyone should look after their parents, spouse and
+                      children by making high income.
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <SparklesIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Everyone should break free from slave wage labour.
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <SparklesIcon
+                      aria-hidden="true"
+                      className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Repeat after me. “ I will work hard to ensure that me and
+                      my loved ones are financially successful to live a life of
+                      fulfillment.”
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Pricing />
       <Faq />
-              
-
 
       <Footer />
     </>

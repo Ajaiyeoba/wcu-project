@@ -187,25 +187,22 @@ function Campuses() {
         Our campuses are all high cash flow based income models
       </p>
 
-      <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+      <div className="  ml-5 mr-5 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         {products.map((product) => (
-          <div key={product.id} className="group relative">
-            {/* <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  alt={product.imageAlt}
-                  src={product.imageSrc}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div> */}
-            <div className="mt-4 flex justify-between">
+          <div key={product.id} className="group relative ">
+            <div className="mt-4 flex  border-2  rounded-md ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec">
               <div>
                 <h3 className="text-base text-custom-ter hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter ">
-                  <a href={product.href}>
-                    <span className=" w-2 h-2 text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180">
+                  <a href={product.href} className="text-custom-sec">
+                    <span
+                      aria-hidden="true"
+                      className="  text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180"
+                    >
                       {" "}
                       {/* {product.icon} */}
                     </span>
-                    <span aria-hidden="true" className=" inset-0" />
+                    <span aria-hidden="true" className=" inset-0 text-custom-sec" />
                     {product.name}
                   </a>
                 </h3>
