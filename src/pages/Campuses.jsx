@@ -40,21 +40,21 @@ const products = [
     name: " E-commerce Business (Branded)",
     href: "/",
     price: "$35",
-    icon: <BuildingStorefrontIcon />,
+   
   },
   {
     id: 6,
     name: "E-commerce Business (Non-Branded) ",
     href: "/",
     price: "$35",
-    icon: <PresentationChartLineIcon />,
+    
   },
   {
     id: 7,
     name: "Content  Creation",
     href: "/",
     price: "$35",
-    icon: <CircleOffIcon />,
+
   },
   {
     id: 8,
