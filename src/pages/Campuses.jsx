@@ -1,11 +1,10 @@
 import React from "react";
-import {
-  BanknotesIcon,
-  CalendarDaysIcon,
-  ShieldExclamationIcon,
-  BuildingStorefrontIcon,
-  PresentationChartLineIcon,
-} from "@heroicons/react/20/solid";
+import {IdCardIcon, BadgeDollarSignIcon,
+  ShellIcon,
+  BellElectricIcon, CircleOffIcon,
+  DollarSignIcon
+}
+from 'lucide-react'
 
 const products = [
   {
@@ -13,28 +12,28 @@ const products = [
     name: "Affiliate Marketing",
     href: "/",
     price: "$35",
-    icon: <BanknotesIcon />,
+    icon: <IdCardIcon />,
   },
   {
     id: 2,
     name: "Ebay Business",
     href: "/",
     price: "$35",
-    icon: <CalendarDaysIcon />,
+    icon: <DollarSignIcon />,
   },
   {
     id: 3,
     name: "Amazon FBA",
     href: "/",
     price: "$35",
-    icon: <ShieldExclamationIcon />,
+    icon: <ShellIcon />,
   },
   {
     id: 4,
     name: "Amazon Arbotrage",
     href: "/",
     price: "$35",
-    icon: <ShieldExclamationIcon />,
+    icon: <BellElectricIcon />,
   },
   {
     id: 5,
@@ -55,7 +54,7 @@ const products = [
     name: "Content  Creation",
     href: "/",
     price: "$35",
-    icon: <BuildingStorefrontIcon />,
+    icon: <CircleOffIcon />,
   },
   {
     id: 8,
@@ -183,7 +182,7 @@ const products = [
 function Campuses() {
   return (
     <>
-      <p className="mt-6 text-lg leading-8 text-custom-ter text-center">
+      <p className="mt-6 text-lg leading-8 text-custom-ter text-center" data-aos="fade-down">
         Our campuses are all high cash flow based income models
       </p>
 
@@ -191,7 +190,7 @@ function Campuses() {
       <div className="  ml-5 mr-5 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         {products.map((product) => (
           <div key={product.id} className="group relative ">
-            <div className="mt-4 flex  border-2  rounded-md ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec">
+            <div data-aos="zoom-in-up" className="mt-4 flex  border-2  rounded-md ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec">
               <div>
                 <h3 className="text-base text-custom-ter hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter ">
                   <a href={product.href} className="text-custom-sec">
@@ -200,7 +199,7 @@ function Campuses() {
                       className="  text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180"
                     >
                       {" "}
-                      {/* {product.icon} */}
+                      {product.icon}
                     </span>
                     <span aria-hidden="true" className=" inset-0 text-custom-sec" />
                     {product.name}

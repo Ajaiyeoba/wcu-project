@@ -7,17 +7,14 @@ const Accordion = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-custom-sec">
+              <span className="mb-4 block text-4xl font-semibold text-custom-sec" data-aos="fade-right">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+              <p className="mb-2 text-base font-bold text-custom-ter" data-aos="fade-left" >
               Are You Ready To Seek Your Fortune? 
-              </h2>
-              {/* <p className="text-base text-body-color dark:text-custom-ter">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p> */}
-                <div className="mt-10 flex items-center justify-center gap-x-6">
+              </p>
+            
+                <div className="mt-10 flex items-center justify-center gap-x-6" data-aos="fade-down">
                 <a
                   href="#"
                   className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
@@ -29,7 +26,7 @@ const Accordion = () => {
         </div>
 
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="w-full px-4 lg:w-1/2" data-aos="fade-left">
             <AccordionItem
               header="How do I know which campus to start from?"
               text="This will be in accordance with how much time and money you have to dedicate yourself. When you enter, take our onboarding quiz that will put you in the right place."
@@ -142,7 +139,7 @@ const AccordionItem = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-custom-ter ">
+          <h4 className="mt-1 text-lg font-semibold text-custom-ter" data-aos="fade-left">
             {header}
           </h4>
         </div>
