@@ -16,11 +16,17 @@ function Home() {
   return (
     <>
       <Navbar />
-
       <div className="bg-custom-pri -pt-4 -ml-2">
         <div className="relative isolate px-6  lg:px-8  bg-custom-pri">
-          <div className="  sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 text-center py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div
+          data-aos="fade-up"
+            aria-hidden="true"
+            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          ></div>
+          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div className="text-center">
+            <div className="  sm:flex sm:justify-center">
+            <div className="relative rounded-full border-custom-blue px-3 text-center py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Are You Ready To Seek Your Fortune?{" "}
               <a href="#" className="font-semibold text-custom-sec">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -29,29 +35,22 @@ function Home() {
               </a>
             </div>
           </div>
-          <div
-          data-aos="fade-up"
-            aria-hidden="true"
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          ></div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="text-center">
-              <h1 data-aos="fade-up" className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl">
+              <h1 data-aos="fade-right" className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl">
                 WEALTH CREATION UNIVERSITY
               </h1>
-              <p className="mt-6 text-lg leading-8 text-custom-ter">
+              <p data-aos="fade-down-left" className="mt-6 text-lg leading-8 text-custom-ter">
                 The current period of economic stagnation and hyperinflation has
                 led to an increase in relative poverty in the world. As jobs per
                 capita decline over time, it is imperative to turn towards
                 entrepreneurship and independence.
               </p>
-              <p className="mt-6 text-lg leading-8 text-custom-ter">
+              <p data-aos="fade-down-left" className="mt-6 text-lg leading-8 text-custom-ter">
                 Wealth Creations University provides a platform for this. Wealth
                 Creations University is an online educational platform that
                 teaches people how to make money through over 22 modernistic
                 wealth-building methods.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div data-aos="fade-down" className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
                   className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
@@ -113,13 +112,13 @@ function Home() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className=" text- text-2xl font-semibold leading-7 text-custom-sec">
+                <p data-aos="fade-down-left" className=" text- text-2xl font-semibold leading-7 text-custom-sec">
                   About Us
                 </p>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-custom-ter sm:text-4xl">
+                <h1 data-aos="fade-down-left" className="mt-2 text-3xl font-bold tracking-tight text-custom-ter sm:text-4xl">
                   What is WCU?
                 </h1>
-                <p className="mt-6 text-xl leading-8 text-custom-sec">
+                <p data-aos="fade-down" className="mt-6 text-xl leading-8 text-custom-sec">
                   WCU is a global education platform where people around the
                   world learn how to make money. Irrespective of background, we
                   believe everyone has the potential to achieve financial
@@ -137,14 +136,14 @@ function Home() {
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="max-w-xl text-base leading-7 text-custom-ter lg:max-w-lg">
-                <p>
+              <div data-aos="" className="max-w-xl text-base leading-7 text-custom-ter lg:max-w-lg">
+                <p data-aos="fade-right">
                   We believe in providing accurate, relevant, and practical
                   knowledge to aid you on your journey. WCU is a world-class
                   academia offering depths of knowledge.
                 </p>
-                <ul role="list" className="mt-8 space-y-8 text-custom-ter">
-                  <li className="flex gap-x-3">
+                <ul role="list" className="mt-8 space-y-8 text-custom-ter" >
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <StrikethroughIcon
                       aria-hidden="true"
                       className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180 "
@@ -155,7 +154,7 @@ function Home() {
                       with our teaching material.
                     </span>
                   </li>
-                  <li className="flex gap-x-3">
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <ArrowUpOnSquareStackIcon
                       aria-hidden="true"
                       className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
@@ -177,8 +176,8 @@ function Home() {
                   average individual budget.
                 </p>
 
-                <ul role="list" className="mt-8 space-y-8 text-custom-ter">
-                  <li className="flex gap-x-3">
+                <ul role="list" className="mt-8 space-y-8 text-custom-ter" >
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <LifebuoyIcon
                       aria-hidden="true"
                       className="mt-1 h-5 w-5 flex-none   text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
@@ -188,7 +187,7 @@ function Home() {
                       methods that can lead to over 5 figure earnings per month.
                     </span>
                   </li>
-                  <li className="flex gap-x-3">
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <ArrowUpOnSquareStackIcon
                       aria-hidden="true"
                       className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
@@ -198,7 +197,7 @@ function Home() {
                       like-minded peers who can support one another.
                     </span>
                   </li>
-                  <li className="flex gap-x-3">
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <SquaresPlusIcon
                       aria-hidden="true"
                       className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
@@ -207,7 +206,7 @@ function Home() {
                       1 to 1 guidance available at any time during your journey.
                     </span>
                   </li>
-                  <li className="flex gap-x-3">
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <CloudArrowUpIcon
                       aria-hidden="true"
                       className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
@@ -217,7 +216,7 @@ function Home() {
                       demonstrations.
                     </span>
                   </li>
-                  <li className="flex gap-x-3">
+                  <li className="flex gap-x-3" data-aos="fade-right">
                     <SparklesIcon
                       aria-hidden="true"
                       className="mt-1 h-5 w-5 flex-none  text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"

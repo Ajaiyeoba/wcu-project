@@ -9,7 +9,8 @@ export default {
       colors: { 
         'custom-pri': '#000000', 
         'custom-sec': '#f1cd87', 
-        'custom-ter': '#fff', 
+        'custom-ter': '#fff',
+        'custom-blue': 'blue' 
     }, 
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
