@@ -7,12 +7,13 @@ import {
   CloudArrowUpIcon,
   BeakerIcon,
 } from "@heroicons/react/20/solid";
+import { CornerRightDownIcon } from "lucide-react";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Campuses from "../pages/Campuses";
 import Faq from "../components/Faq";
 import Pricing from "../components/Pricing";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 function Home() {
   return (
     <>
@@ -90,7 +91,7 @@ function Home() {
         id="about"
         className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
       >
-        <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute inset-0 -z-10 overflow-hidden" data-aos="fade-up"> 
           <svg
             aria-hidden="true"
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -395,9 +396,122 @@ function Home() {
         </div>
       </div>
       <Pricing />
+      <div
+        id="about"
+        className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div className="absolute inset-0 -z-10 overflow-hidden" data-aos="fade-up">
+          <svg
+            aria-hidden="true"
+            className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          >
+            <defs>
+              <pattern
+                x="50%"
+                y={-1}
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width={200}
+                height={200}
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y={-1} className="overflow-visible fill-custom-ter">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                strokeWidth={0}
+              />
+            </svg>
+            <rect
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+            />
+          </svg>
+        </div>
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div className="lg:pr-4">
+              <div className="lg:max-w-lg">
+                <h1
+                  data-aos="fade-down-left"
+                  className="mt-2 text-3xl font-bold tracking-tight text-custom-ter sm:text-4xl"
+                >
+                  GRADUATION
+                </h1>
+                <p
+                  data-aos="fade-down"
+                  className="mt-6 text-xl leading-8 text-custom-sec"
+                >
+                  At WCU, we believe graduation is not necessarily about having
+                  a piece of paper that will only guarantee you the wage of the
+                  average rent. Rather, graduation means to become competent in
+                  your field of business which will allow you to achieve a high
+                  income. Hence, you will achieve the greatest graduation award
+                  which is the{" "}
+                  <span className="font-extrabold"> money-making skills</span>{" "}
+                  you gain within our course campuses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <img
+              alt=""
+              src=""
+              className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            />
+          </div>
+          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div className="lg:pr-4">
+              <div
+                data-aos=""
+                className="max-w-xl text-base leading-7 text-custom-ter lg:max-w-lg"
+              >
+                <ul role="list" className="mt-8 space-y-8 text-custom-ter">
+                  <li className="flex gap-x-3" data-aos="fade-right">
+                    <StrikethroughIcon
+                      aria-hidden="true"
+                      className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter  hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180 "
+                    />
+                    <span>
+                      To teach people how to provide Value is at the heart of
+                      WCU.
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3" data-aos="fade-right">
+                    <ArrowUpOnSquareStackIcon
+                      aria-hidden="true"
+                      className="mt-1 h-28 w-28 flex-none text-custom-sec hover:text-custom-ter hover:rounded-xl hover:transition-all duration-300 ease-linear cursor-pointer hover:rotate-180"
+                    />
+                    <span>
+                      Our graduates will prosper to great heights of financial
+                      success because they only learned true knowledges for
+                      freedom and fortune
+                    </span>
+                  </li>
+                </ul>
+                <p className="mt-8">
+                  Join The future Alumni for where our students become
+                  successful entrepreneurs.
+                  <a
+                    href="#"
+                    data-aos="fade-right"
+                    className="rounded-md bg-custom-sec px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  >
+                    Join Now
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Faq />
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

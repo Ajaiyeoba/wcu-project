@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Accordion = () => {
   return (
     <section className="relative z-20 overflow-hidden bg-custom-pri pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
-      <div className="container mx-auto">
+      <div className="container mx-auto" id="faq">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
@@ -115,13 +115,14 @@ const AccordionItem = ({ header, text }) => {
     setActive(!active);
   };
   return (
-    <div className="mb-8 w-full rounded-lg bg-custom-pri p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+    <div data-aos="fade-right" className="mb-8 w-full rounded-lg bg-custom-pri p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
       <button
         className={`faq-btn flex w-full text-left`}
         onClick={() => handleToggle()}
       >
         <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-custom-sec text-custom-ter ">
           <svg
+          data-aos="fade-right"
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
               active ? "rotate-180" : ""
             }`}

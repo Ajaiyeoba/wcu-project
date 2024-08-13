@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="relative justify-center z-10 bg-custom-pri  pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-        <div className="container">
+        <div className="container" id="faq">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
@@ -64,7 +64,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </span>
-                  <span> +012 (345) 678 99</span>
+                  <span> +447599623638 </span>
                 </p>
               </div>
             </div>

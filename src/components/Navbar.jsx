@@ -10,11 +10,11 @@ const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Product', href: '/' },
   { name: 'Campuses', href: '#campuses' },
-  { name: 'Our Axioms', href: '/axioms' },
+  { name: 'Our Axioms', href: '#axioms' },
   { name: 'History', href: '/history' },
-  { name: 'Q & A', href: '/q&a' },
+  { name: 'Q & A', href: '#q&a' },
   { name: 'Founder', href: '/founder' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact', href: '#contact' },
 ]
  const handleScroll = (e) => {
   e.preventDefault();
