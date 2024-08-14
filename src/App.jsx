@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Register from "./form/Register";
+
 import Aos from "aos";
 import "./App.css";
 import "aos/dist/aos.css";
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
+
           </Routes>
         </BrowserRouter>
       </div>
