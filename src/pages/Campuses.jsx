@@ -8,7 +8,7 @@ import {
   HeaterIcon, PresentationIcon, LayoutDashboardIcon,
   Users2Icon, LoaderPinwheelIcon,
 } from "lucide-react";
-
+import {Dialog, DialogPanel} from '@headlessui/react'
 const products = [
   {
     id: 1,

@@ -23,7 +23,7 @@ const navigation = [
   section.scrollIntoView({behaviour: 'smooth'})
   setActiveSection(sectionId)
  }
-export default function Example() {
+export default function MobileMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
