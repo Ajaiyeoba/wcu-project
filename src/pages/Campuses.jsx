@@ -276,17 +276,17 @@ function Campuses() {
 
        {/* </div> */}
        {isOpen && selectedCampus && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div data-aos="zoom-out" className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
           <span>{selectedCampus.icon}</span>
             <h2 className="text-2xl font-bold mb-4">{selectedCampus.name}</h2>
             <p className="text-gray-700 mb-2"><strong>Price:</strong> {selectedCampus.price}</p>
             <p className="text-gray-700">{selectedCampus.info}</p>
             <div className="justify-between flex">
-            <button onClick={closeModal} className="mt-4 bg-indigo-900 0 text-custom-ter px-4 py-2 rounded">Close</button>
+            <button data-aos="fade-right" onClick={closeModal} className="mt-4 bg-indigo-900 0 text-custom-ter px-4 py-2 rounded">Close</button>
            <Link 
            to="/register">
-           <button className="bg-custom-sec text-custom-pri mt-4 rounded  px-4 py-2"> Signup</button>
+           <button  data-aos="fade-left" className="bg-custom-sec text-custom-pri mt-4 rounded  px-4 py-2"> Signup</button>
            </Link> 
             </div>
           </div>
