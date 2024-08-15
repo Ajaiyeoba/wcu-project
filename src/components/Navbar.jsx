@@ -23,7 +23,7 @@ const navigation = [
   section.scrollIntoView({behaviour: 'smooth'})
   setActiveSection(sectionId)
  }
-export default function Example() {
+export default function MobileMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -65,15 +65,15 @@ export default function Example() {
     </nav>
     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
       <div className="fixed inset-0 z-50" />
-      <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-custom-pri px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <DialogPanel className="fixed inset-y-0 right-0 z-50 w-64 overflow-y-auto bg-custom-pri px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Wealth Creation University</span>
-            <img
+            {/* <img
               alt=""
               src={logo}
               className=" w-16 h-auto"
-            />
+            /> */}
           </a>
           <button
             type="button"

@@ -38,7 +38,7 @@ function Home() {
                 </div>
               </div>
               <h1
-                data-aos="fade-right"
+                data-aos="fade-down"
                 className="text-4xl font-bold tracking-tight text-custom-sec sm:text-6xl"
               >
                 WEALTH CREATION UNIVERSITY
