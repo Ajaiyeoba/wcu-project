@@ -7,6 +7,7 @@ import {
   CloudArrowUpIcon,
   BeakerIcon,
 } from "@heroicons/react/20/solid";
+import {Link} from 'react-router-dom';
 import { CornerRightDownIcon } from "lucide-react";
 import React from "react";
 import Navbar from "../components/Navbar";
@@ -14,6 +15,9 @@ import Campuses from "../pages/Campuses";
 import Faq from "../components/Faq";
 import Pricing from "../components/Pricing";
 // import Footer from "../components/Footer";
+
+
+
 function Home() {
   return (
     <>
@@ -65,12 +69,12 @@ function Home() {
                 data-aos="fade-down"
                 className="mt-10 flex items-center justify-center gap-x-6"
               >
-                <a
-                  href="#"
+                <Link
+                  to="/register"
                   className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
                 >
                   Join Now
-                </a>
+                </Link>
                 <a
                   href="#"
                   className="text-sm font-semibold leading-6 text-custom-sec"
@@ -292,12 +296,12 @@ function Home() {
             className="mt-10 flex items-center justify-center gap-x-6"
             data-aos="fade-down"
           >
-            <a
-              href="#"
+            <Link
+              to="/register"
               className="rounded-md bg-custom-sec px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Join Now
-            </a>
+            </Link>
             <a
               href="/login"
               className="text-sm font-semibold leading-6 text-custom-ter"
@@ -496,13 +500,13 @@ function Home() {
                 <p className="mt-8">
                   Join The future Alumni for where our students become
                   successful entrepreneurs.
-                  <a
-                    href="#"
+                  <Link
+                    to="/register"
                     data-aos="fade-right"
                     className="rounded-md bg-custom-sec px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     Join Now
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

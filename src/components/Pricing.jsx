@@ -1,5 +1,5 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
-
+import {Link} from 'react-router-dom';
 const includedFeatures = [
   "Step by Step Guidance",
   "Practical world-class education",
@@ -72,13 +72,13 @@ export default function Pricing() {
                     £50.99{" "}
                   </span>
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/register"
                   className="mt-10 block w-full rounded-md bg-custom-sec px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:opacity-75  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   data-aos="fade-left"
                 >
               Join Now
-                </a>
+                </Link>
                 <p className="mt-6 text-xs leading-5 text-gray-600" data-aos="fade-right">
                 Cancel anytime subscription  <br />
                 Limited  Spaces Available

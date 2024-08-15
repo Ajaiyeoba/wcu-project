@@ -3,6 +3,7 @@
 import { useState } from 'react'
  import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import {Link} from 'react-router-dom'
 import logo from '../assets/logo.jpg'
 
 
@@ -12,7 +13,7 @@ const navigation = [
   { name: 'Campuses', href: '#campuses' },
   { name: 'Our Axioms', href: '#axioms' },
   { name: 'History', href: '/history' },
-  { name: 'Q & A', href: '#q&a' },
+  { name: 'Q & A', href: '#faq' },
   { name: 'Founder', href: '/founder' },
   { name: 'Contact', href: '#contact' },
 ]
@@ -23,7 +24,7 @@ const navigation = [
   section.scrollIntoView({behaviour: 'smooth'})
   setActiveSection(sectionId)
  }
-export default function MobileMenu() {
+  function MobileMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -58,9 +59,9 @@ export default function MobileMenu() {
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-custom-sec rounded-md">
+        <Link to="/login" className="text-sm font-semibold leading-6 text-custom-sec rounded-md">
           Join Now <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
       </div>
     </nav>
     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -98,12 +99,12 @@ export default function MobileMenu() {
               ))}
             </div>
             <div className="py-6">
-              <a
-                href="/form"
+              <Link
+                to="/login"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-custom-sec hover:bg-gray-50 transition ease-in-out duration-300"
               >
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -113,3 +114,4 @@ export default function MobileMenu() {
    
   )
 }
+export default  MobileMenu;

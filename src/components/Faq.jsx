@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
+import {Link} from 'react-router-dom'
 const Accordion = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-custom-pri pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section id="faq" className="relative z-20 overflow-hidden bg-custom-pri pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto" id="faq">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -15,11 +15,11 @@ const Accordion = () => {
               </p>
             
                 <div className="mt-10 flex items-center justify-center gap-x-6" data-aos="fade-down">
-                <a
-                  href="#"
+                <Link
+                  to="/register"
                   className="rounded-md bg-custom-sec text-custom-ter px-3.5 py-2.5 text-sm font-semibold text-custon-ter shadow-sm hover:opacity-75 hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter"
                 >   ENROLL NOW      £29.99
-                </a>
+                </Link>
               </div>
             </div>
           </div>

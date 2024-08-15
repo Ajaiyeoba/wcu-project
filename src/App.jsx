@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Register from "./form/Register";
-import DialogTest from "./components/DialogTest";
+import Login from './form/Login'
 import Aos from "aos";
 import "./App.css";
 import "aos/dist/aos.css";
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/dialogtest" element={<DialogTest />}/>
+            <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>
       </div>

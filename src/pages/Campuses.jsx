@@ -8,6 +8,7 @@ import {
   HeaterIcon, PresentationIcon, LayoutDashboardIcon,
   Users2Icon, LoaderPinwheelIcon,
 } from "lucide-react";
+import {Link} from 'react-router-dom'
 const campuses = [
   {
     id: 1,
@@ -281,10 +282,13 @@ function Campuses() {
             <h2 className="text-2xl font-bold mb-4">{selectedCampus.name}</h2>
             <p className="text-gray-700 mb-2"><strong>Price:</strong> {selectedCampus.price}</p>
             <p className="text-gray-700">{selectedCampus.info}</p>
-<div className="justify-between flex">
-<button onClick={closeModal} className="mt-4 bg-indigo-500 text-white px-4 py-2 rounded">Close</button>
-<button className="bg-custom-sec text-custom-ter mt-4 rounded  px-4 py-2"> Signup</button>
-</div>
+            <div className="justify-between flex">
+            <button onClick={closeModal} className="mt-4 bg-indigo-900 0 text-custom-ter px-4 py-2 rounded">Close</button>
+           <Link 
+           to="/register">
+           <button className="bg-custom-sec text-custom-pri mt-4 rounded  px-4 py-2"> Signup</button>
+           </Link> 
+            </div>
           </div>
         </div>
       )}
