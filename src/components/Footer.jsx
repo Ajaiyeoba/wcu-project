@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="relative justify-center z-10 bg-custom-pri  pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-        <div className="container" id="faq">
+        <div className="container" id="">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
@@ -198,7 +198,7 @@ const Footer = () => {
           </span>
         </div>
 
-        <p className="mt-6 mx-auto text-sm leading-8 text-custom-ter">
+        <p className="mt-6 p-5 mx-auto text-sm leading-8 text-custom-ter">
           WCU is an online educational community platform. Any members enrolled
           must understand that they are responsible for implementing the
           knowledge taught inside of WCU. WCU does not guarantee any profit

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
-import Register from "./form/Register";
-import Login from './form/Login'
+import Register from "./auth/Signup";
+import Login from './auth/Login'
 import Aos from "aos";
 import "./App.css";
 import "aos/dist/aos.css";

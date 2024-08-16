@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import {Link} from 'react-router-dom';
-
+import Footer from '../components/Footer';
 
 function Register() {
   return (
@@ -144,8 +144,19 @@ function Register() {
 </div>
          </div>
 
+
+
+
+
+
+
+
+
+
+
+
+         <Footer />
          </div>
-  
   )
 }
 

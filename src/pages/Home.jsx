@@ -7,7 +7,7 @@ import {
   CloudArrowUpIcon,
   BeakerIcon,
 } from "@heroicons/react/20/solid";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { CornerRightDownIcon } from "lucide-react";
 import React from "react";
 import Navbar from "../components/Navbar";
@@ -15,8 +15,6 @@ import Campuses from "../pages/Campuses";
 import Faq from "../components/Faq";
 import Pricing from "../components/Pricing";
 // import Footer from "../components/Footer";
-
-
 
 function Home() {
   return (
@@ -95,10 +93,13 @@ function Home() {
         id="about"
         className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
       >
-        <div className="absolute inset-0 -z-10 overflow-hidden" data-aos="fade-up"> 
+        <div
+          className="absolute inset-0 -z-10 overflow-hidden"
+          data-aos="fade-up"
+        >
           <svg
             aria-hidden="true"
-            className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-indigo-600 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           >
             <defs>
               <pattern
@@ -404,7 +405,10 @@ function Home() {
         id="about"
         className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
       >
-        <div className="absolute inset-0 -z-10 overflow-hidden" data-aos="fade-up">
+        <div
+          className="absolute inset-0 -z-10 overflow-hidden"
+          data-aos="fade-up"
+        >
           <svg
             aria-hidden="true"
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
