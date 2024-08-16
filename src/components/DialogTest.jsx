@@ -227,7 +227,7 @@ function DialogTest() {
    
     <div>
        <Navbar />
-      <div className="  pt-20 ">
+      <div className="text-center justify-between  pt-20 ">
         {campuses.map((campus) => (
             <div key={campus.id}  className='mt-4 flex  border-2  rounded-md ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec  '>
                 <h3 className=''>
