@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
-import Register from "./auth/Signup";
+import Signup from "./auth/Signup";
 import Login from './auth/Login'
 import Aos from "aos";
-import "./App.css";
 import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
@@ -17,7 +16,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>

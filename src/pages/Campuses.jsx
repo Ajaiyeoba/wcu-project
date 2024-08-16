@@ -285,7 +285,7 @@ function Campuses() {
             <div className="justify-between flex">
             <button data-aos="fade-right" onClick={closeModal} className="mt-4 bg-indigo-900 0 text-custom-ter px-4 py-2 rounded">Close</button>
            <Link 
-           to="/register">
+           to="/signup">
            <button  data-aos="fade-left" className="bg-custom-sec text-custom-pri mt-4 rounded  px-4 py-2"> Signup</button>
            </Link> 
             </div>
