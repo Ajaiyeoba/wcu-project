@@ -10,13 +10,13 @@ const includedFeatures = [
 
 export default function Pricing() {
   return (
-    <div className="bg-custom-pri py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-         <div className="mx-auto max-w-2xl sm:text-center" >
-          {/* <h2 className="text-2xl font-bold text-center tracking-tight text-custom-sec " data-aos="fade-down-left">
+    <div className="bg-custom- py-24 sm:py-32">
+      <div className="mx-auto max-w-4xl px-4 lg:px-8">
+         {/* <div className="overflow-auto  max-w-xl sm:text-center overflow-x-hidden" >
+          <h2 className="text-2xl font-bold text-center tracking-tight text-custom-sec" data-aos="fade-down-left">
             WCU PREMIUM FINAL PRICE
-          </h2> */}
-          {/* <p className="mt-6 text-lg leading-8 text-custom-ter" data-aos="fade-right">
+          </h2>
+           <p className="mt-6 text-base leading-8 text-custom-ter" data-aos="fade-right">
             The uniqueness of WCU is that we provide material for everyone to
             have a fair chance. The modern education system puts the average
             person in student debt of £45,000 (2023 UK) But we believe you do
@@ -24,8 +24,8 @@ export default function Pricing() {
             And we do not believe you should put yourself in interest debt just
             to have a better life. Our monthly membership price is £29.99 The
             opportunity cost is close to 0.
-          </p> */}
-        </div> 
+          </p>
+        </div>  */}
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-indigo-600 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-custom-sec" data-aos="fade-left">

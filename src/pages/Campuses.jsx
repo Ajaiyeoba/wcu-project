@@ -222,17 +222,12 @@ function Campuses() {
           <div key={campus.id} className="group relative ">
             <div
               data-aos="zoom-in-up"
-              className="mt-4 flex  border-2  rounded-md ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec"
+              className="mt-4 flex  border-2 rounded-md hover:ring-indigo-600 ring-custom-sec justify-center p-4  hover:shadow-md-custom-sec"
             >
               <div>
                 <h3 className="text-base text-custom-ter hover:-translate-y-1 hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-ter ">
                   <a href="#" onClick={(e) => { e.preventDefault(); openModal(campus); }} className="text-custom-sec">
-                    <span
-                      aria-hidden="true"
-                      className="  text-custom-ter hover:transition ease-in-out duration-300 hover:text-custom-sec hover:rotate-180"
-                    >
-
-                    </span>
+                   
                     <span
                       aria-hidden="true"
                       className=" inset-0 text-custom-sec flex"

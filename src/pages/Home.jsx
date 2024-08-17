@@ -6,9 +6,10 @@ import {
   SparklesIcon,
   CloudArrowUpIcon,
   BeakerIcon,
+
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
-import { CornerRightDownIcon } from "lucide-react";
+import { CornerRightDownIcon, DollarSignIcon } from "lucide-react";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Campuses from "../pages/Campuses";
@@ -20,17 +21,17 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="bg-custom-pri -pt-4 -ml-2">
-        <div className="relative isolate px-6  lg:px-8  bg-custom-pri">
+      <div className="bg-custom-pri pt-4 ml-2">
+        <div className="relative mx-auto mt-16 max-w-2xl isolate px-6  lg:px-8  bg-custom-pri">
           <div
             data-aos="fade-up"
             aria-hidden="true"
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           ></div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto  py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <div className="  sm:flex sm:justify-center">
-                <div className="relative rounded-full border-custom-blue px-3 text-center py-1 text-sm leading-6 text-custom-ter ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                <div className="relative rounded-full border-custom-blue px-3 text-center py-1 text-sm leading-6 text-custom-ter ring-1 ring-white">
                   Are You Ready To Seek Your Fortune?{" "}
                   <a href="#" className="font-semibold text-custom-sec">
                     <span aria-hidden="true" className="absolute inset-0" />
@@ -87,7 +88,7 @@ function Home() {
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           ></div>
         </div>
-      </div>
+     
 
       <div
         id="about"
@@ -113,12 +114,7 @@ function Home() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            {/* <svg x="50%" y={-1} className="overflow-visible fill-custom-ter">
-              <path
-                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg> */}
+           
             <rect
               fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
               width="100%"
@@ -263,7 +259,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div id="campuses" className="mx-auto max-w-2xl py-8 sm:py-48 lg:py-36">
         <div className="text-center">
@@ -313,9 +309,11 @@ function Home() {
         </div>
       </div>
       <Campuses />
-      <div
+
+
+       <div
         id="axioms"
-        className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+        className="relative isolate sm:overflow-x-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
       >
         <div className="absolute inset-0 -z-10 overflow-hidden"></div>
         <div className="mx-auto grid justify-center max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -399,7 +397,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
       <Pricing />
       <div
         id="about"
@@ -439,7 +437,7 @@ function Home() {
             />
           </svg>
         </div>
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div id="graduation" className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
@@ -518,7 +516,7 @@ function Home() {
         </div>
       </div>
       <Faq />
-
+      </div>
       {/* <Footer /> */}
     </>
   );
