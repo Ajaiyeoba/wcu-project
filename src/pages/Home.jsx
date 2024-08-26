@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="bg-custom-pri pt-4 ml-2">
+      <div className="text-poppins bg-custom-pri pt-4 ml-2">
         <div className="relative mx-auto mt-16 max-w-2xl isolate px-6  lg:px-8  bg-custom-pri">
           <div
             data-aos="fade-up"

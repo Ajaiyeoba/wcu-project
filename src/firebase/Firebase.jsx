@@ -1,22 +1,22 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth';
+import {getFirestore} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBNQ78P_ZTDzusLY06m7eRTie3cCCLJdbM",
-  authDomain: "wcu-p-52e24.firebaseapp.com",
-  projectId: "wcu-p-52e24",
-  storageBucket: "wcu-p-52e24.appspot.com",
-  messagingSenderId: "925891639645",
-  appId: "1:925891639645:web:af093176dab425666c10b4"
+  apiKey: "AIzaSyCKvVVYyYIf4WLuGo7Dbdmd-xnugABuix8",
+  authDomain: "wealth-creation-university.firebaseapp.com",
+  projectId: "wealth-creation-university",
+  storageBucket: "wealth-creation-university.appspot.com",
+  messagingSenderId: "458389044851",
+  appId: "1:458389044851:web:549e63507cfe5199577406"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app)
-
-
-export (app, auth);
+export const auth=getAuth();
+export const db=getFirestore(app);
+export default app;

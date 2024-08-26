@@ -211,7 +211,7 @@ function Campuses() {
   return (
     <>
       <p
-        className="mt-6 text-lg leading-8 text-custom-ter text-center"
+        className="mt-6 text-poppins text-lg leading-8 text-custom-ter text-center"
         data-aos="fade-down"
       >
         Our campuses are all high cash flow based income models
