@@ -31,9 +31,9 @@ function Board() {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-custom-pri">
         <Sidebar userDetails={userDetails} />
-        <div className="text-center">
+        <div className="text-center text-custom-sec">
           <div>
             <h5>{userDetails?.firstname}</h5>
             <p>{userDetails?.lastname}</p>
