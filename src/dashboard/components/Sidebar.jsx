@@ -1,4 +1,6 @@
 import React from "react";
+import { auth } from "../../firebase/Firebase"
+import { toast } from "react-toastify";
 import {
   Card,
   Typography,
@@ -51,8 +53,31 @@ import {
 import Logo from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
 export default function Sidebar() {
+  const [open, setOpen] = React.useState(0);
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
  
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
+ 
+  const openDrawer = () => setIsDrawerOpen(true);
+  const closeDrawer = () => setIsDrawerOpen(false);
 
+  async function handleLogout() {
+    try {
+      await auth.signOut();
+      window.location.href = "/login";
+      console.log("User logged out successfully!");
+    toast.success("User logged out successfully", {
+      position: "top-center"
+    })
+    } catch (error) {
+      console.log("Error logging out", error.message);
+      toast.error(error.message, {
+        position: "top-center"
+      })
+    }
+  }
   return (
     <Card className="h-full w-full max-w-[20rem] p-2 shadow-xl ">
       <div className="mb-2 flex items-center gap-4 p-4">
@@ -670,7 +695,7 @@ export default function Sidebar() {
           </ListItemPrefix>
           Settings
         </ListItem>
-        <ListItem>
+        <ListItem onClick={handleLogout}> 
           <ListItemPrefix>
             <PowerIcon className="h-5 w-5" />
           </ListItemPrefix>
