@@ -5,8 +5,7 @@ import Login from './auth/Login'
 import Board from "./dashboard/Board";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Header from "./dashboard/components/Header";
-import SidebarContent from "./dashboard/components/SidebarContent";
+import Sidebar from "./dashboard/components/Sidebar";
 import {auth} from './firebase/Firebase';
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 function App() {
@@ -22,7 +21,7 @@ function App() {
   })
   return (
     <>
-      <div className="App bg-custom-pri scroll-smooth text-poppins">
+      <div className="App scroll-smooth text-poppins">
         <BrowserRouter>
           <Routes>
             {/* <Route path="/" element={user ? <Navigate to='/board' /> : <Home/> } /> */}
@@ -31,7 +30,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/board" element={ <Board />} />
             {/* <Route path="/header" element={ <Header />} /> */}
-            <Route path="/sidebar" element={<SidebarContent/>}/>
+            <Route path="/sidebar" element={<Sidebar />}/>
           </Routes>
         </BrowserRouter>
       </div>
