@@ -15,7 +15,7 @@ import Navbar from "../components/Navbar";
 import Campuses from "../pages/Campuses";
 import Faq from "../components/Faq";
 import Pricing from "../components/Pricing";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -516,8 +516,17 @@ function Home() {
         </div>
       </div>
       <Faq />
+
+      
+      <Footer />
+      <p className="mt-6 text-center pl-10 pr-10 mx-auto text-sm leading-8 text-custom-ter">
+          WCU is an online educational community platform. Any members enrolled
+          must understand that they are responsible for implementing the
+          knowledge taught inside of WCU. WCU does not guarantee any profit
+          earnings. WCU is not responsible for any student’s decision and/or
+          failure to make money.
+        </p>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }

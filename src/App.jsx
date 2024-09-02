@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
 import Board from "./dashboard/Board";
+import Bar from "./dashboard/Bar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { auth } from "./firebase/Firebase";
@@ -20,14 +21,18 @@ function App() {
   });
   return (
     <>
-      <div className="App scroll-smooth text-poppins">
+      <div className="App  scroll-smooth text-poppins">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={user ? <Navigate to='/board' /> : <Home/> } />
+            <Route
+              path="/"
+              element={user ? <Navigate to="/board" /> : <Home />}
+            />
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/board" element={<Board />} />
+            <Route path="/bar" element={<Bar />} />
           </Routes>
         </BrowserRouter>
       </div>
