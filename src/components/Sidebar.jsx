@@ -5,7 +5,15 @@ import {
   SettingsIcon,
   ArrowDownIcon,
   GalleryVerticalIcon,
+  IdCardIcon, BadgeDollarSignIcon, ShellIcon,
+  BellElectricIcon, CircleOffIcon, DollarSignIcon,
+  SquarePenIcon, PencilIcon, PenLineIcon, StoreIcon,
+  SparkleIcon, VideoIcon, BracesIcon,
+  MegaphoneIcon, ScreenShareIcon, ScreenShareOffIcon,
+  HeaterIcon, PresentationIcon, LayoutDashboardIcon,
+  Users2Icon, LoaderPinwheelIcon, 
 } from "lucide-react";
+// import {TiktokIcon,} from '@heroicons/react'
 import { Transition } from "@windmill/react-ui";
 
 const routes = [
@@ -21,7 +29,7 @@ const routes = [
   },
   {
     path: "/",
-    icon: <Link2Icon />,
+    icon: <IdCardIcon />,
     title: "Amazon Arbitrage ",
     routes: [
       {
@@ -40,7 +48,7 @@ const routes = [
   },
   {
     path: "/",
-    icon: <Link2Icon />,
+    icon: <ShellIcon />,
     title: "Amazon FBA",
     routes: [
       {
@@ -59,7 +67,7 @@ const routes = [
   },
   {
     path: "/",
-    icon: <Link2Icon />,
+    icon: <DollarSignIcon />,
     title: "Ebay ",
     routes: [
       {
@@ -78,7 +86,7 @@ const routes = [
   },
   {
     path: "/",
-    icon: <Link2Icon />,
+    icon: <PenLineIcon />,
     title: "Ghostwriting ",
     routes: [
       {
@@ -97,7 +105,7 @@ const routes = [
   },
   {
     path: "/",
-    icon: <Link2Icon />,
+    icon: <SquarePenIcon />,
     title: "Content Creation ",
     routes: [
       {
@@ -115,7 +123,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <BracesIcon />,
     title: "Web Design ",
     routes: [
       {
@@ -133,7 +141,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <IdCardIcon />,
     title: "Affiliate Marketing ",
     routes: [
       {
@@ -151,7 +159,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <CircleOffIcon />,
     title: "E-commerce Business (Branded)  ",
     routes: [
       {
@@ -169,7 +177,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <BadgeDollarSignIcon />,
     title: "E-commerce Business (Non-Branded) ",
     routes: [
       {
@@ -187,7 +195,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <HeaterIcon />,
     title: "Fortune Course Creation ",
     routes: [
       {
@@ -205,7 +213,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <Users2Icon />,
     title: "Community Membership Mastery ",
     routes: [
       {
@@ -223,7 +231,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <PresentationIcon />,
     title: "Course Creation Growth Agency ",
     routes: [
       {
@@ -241,7 +249,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <StoreIcon />,
     title: "Digital Marketing Agency  ",
     routes: [
       {
@@ -259,7 +267,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <SparkleIcon />,
     title: "Social Media Marketing Agency",
     routes: [
       {
@@ -277,7 +285,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <VideoIcon />,
     title: "Video Editing Agency",
     routes: [
       {
@@ -295,7 +303,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <MegaphoneIcon />,
     title: "Advertising Agency ",
     routes: [
       {
@@ -313,7 +321,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <ScreenShareIcon />,
     title: "Niche Specialist Consultancy ",
     routes: [
       {
@@ -331,7 +339,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <ScreenShareOffIcon />,
     title: "Niche Specialist Coaching ",
     routes: [
       {
@@ -349,7 +357,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <LayoutDashboardIcon />,
     title: "Online Tutoring ",
     routes: [
       {
@@ -367,7 +375,7 @@ const routes = [
     ],
   },
   {
-    icon: <Link2Icon />,
+    icon: <LoaderPinwheelIcon />,
     title: "Freelancing ",
     routes: [
       {
@@ -492,10 +500,9 @@ const routes = [
       },
     ],
   },
-  
 ];
 
-function SidebarContent({ route }) {
+function Sidebar({ route }) {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleDropdownClick = (path) => {
@@ -576,4 +583,4 @@ function SidebarContent({ route }) {
   );
 }
 
-export default SidebarContent;
+export default Sidebar;
