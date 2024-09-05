@@ -24,7 +24,7 @@ const handleScroll = (e) => {
   setActiveSection(sectionId);
 };
 
-function MobileMenu() {
+function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className=" bg-custom-pri top-0 z-50">
@@ -120,4 +120,4 @@ function MobileMenu() {
     </header>
   );
 }
-export default MobileMenu;
+export default Navbar;
