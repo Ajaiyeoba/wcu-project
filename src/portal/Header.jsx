@@ -93,7 +93,7 @@ function Header() {
     <div className={`flex ${isSidebarOpen ? "ml-64" : "ml-0"}`} >
     
       <aside className={`z-40 absolute top-0 left-0 h-full overflow-y-auto dark:bg-gray-800 transition-transform duration-300 transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 lg:static lg:inset-0`}>
-        <Sidebar />
+        <Sidebar userDetails={userDetails}/>
       </aside>
       <div className="flex-1  " >
         <header className="z-40 py-4 bg-black shadow-bottom dark:bg-gray-800 ">
@@ -117,6 +117,10 @@ function Header() {
                   aria-label="Search"
                 />
               </div> */}
+
+              <h2 className="text-2xl">Welcome 
+                <span className="text-custom-sec">{userDetails?.firstname}</span>
+              </h2>
             </div>
 
             <ul className="flex items-center flex-shrink-0 space-x-6">
@@ -198,7 +202,7 @@ function Header() {
           </div>
         </header>
         <main className=" pl-4 pt-4">
-          <h2 className="text-indigo-600 text-4xl">Welcome</h2>
+          <h2 className="text-indigo-600 text-4xl"></h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
             quia, quaerat commodi dicta omnis dolore natus reiciendis maiores
